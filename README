@@ -1,0 +1,22 @@
+
+npm i -D @nuxtjs/tailwindcss
+npm i postcss-responsive-type
+npm i @nuxt/postcss8
+npm i postcss-hexrgba
+npm i @nuxtjs/vuetify
+npm i vee-validate
+npx tailwindcss init --full
+npm install @nuxtjs/axios
+
+
+    "@nuxt/postcss8": "^1.1.3",
+    "@nuxtjs/vuetify": "^1.12.3",
+
+
+npm install sass sass-loader@^10 fibers
+
+
+pip install mysqlclient
+pip install django-cors-headers + 'corsheaders.middleware.CorsMiddleware' => Middleware
+
+django-debug-toolbar + "django.contrib.staticfiles" => installed app
