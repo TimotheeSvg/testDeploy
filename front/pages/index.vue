@@ -66,6 +66,7 @@ export default {
       }
 
       console.log(data)
+
       this.$axios.post('http://127.0.0.1:8000/testPost/', data)
     }
   },
