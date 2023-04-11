@@ -1,5 +1,5 @@
 <template>
-  <v-app v-if="!loading" class="">
+  <div v-if="!loading" class="">
     <div class="grid grid-cols-12 mt-20">
       <div class="flex flex-col items-center col-span-6">
         <div class="font-bold text-9xl">
@@ -10,26 +10,21 @@
               <v-text-field
                 v-model="name"
                 label="Nom"
-                outlined
               ></v-text-field>
 
               <v-text-field
                 v-model="couleur"
                 label="Couleur"
-                outlined
               ></v-text-field>
 
               <v-text-field
                 v-model="prix"
                 label="prix"
-                outlined
               ></v-text-field>
 
               <v-btn outlined type="submit" @click="send" class="mt-3 ml-12">
                 Button
               </v-btn>
-
-
             </v-col>
           </v-form>
       </div>
@@ -54,8 +49,7 @@
         </v-data-table>
       </div>
     </div>
-
-  </v-app>
+  </div>
 </template>
 
 <script>
@@ -68,7 +62,8 @@ export default {
       couleur: null,
       prix: null,
       loading:false,
-      initialData: null
+      initialData: null,
+      pageList: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6']
     }
   },
   methods: {
@@ -88,7 +83,6 @@ export default {
             couleur: this.couleur,
             prix: parseInt(this.prix)
         })
-
         this.name = ''
         this.couleur = ''
         this.prix = ''
@@ -128,7 +122,7 @@ export default {
           this.loading = false
         })
       })
-      
+
       this.voitures.splice(this.voitures.indexOf(voiture), 1)
     }
   },
@@ -147,6 +141,9 @@ export default {
         {text: 'Action', value:'actions'}
       ]
     }
+  },
+  updated() {
+    console.log("la")
   }
 }
 </script>

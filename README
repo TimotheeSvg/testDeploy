@@ -19,4 +19,4 @@ npm install sass sass-loader@^10 fibers
 pip install mysqlclient
 pip install django-cors-headers + 'corsheaders.middleware.CorsMiddleware' => Middleware
 
-django-debug-toolbar + "django.contrib.staticfiles" => installed app
+djangoebug-toolbar + "django.contrib.staticfiles" => installed app

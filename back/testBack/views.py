@@ -1,7 +1,6 @@
 from django.http import JsonResponse
 from .serializer import VoituresSerializer
 from . import models
-from django.views.decorators.csrf import csrf_exempt
 
 
 from rest_framework.views import APIView
